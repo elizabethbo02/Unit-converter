@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Unit converter</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="main">
+        <h2 class="main-header">Metric/Imperial Unit Conversion</h2>
+        <div class="input-num-container">
+          <input type="text" id="input-number"/><br>
+          <button id="convert-btn">Convert</button>
+        </div>
+      </div>
+
+      <div class="result-container">
+        <div class="conversion-result">
+          <h3 class="coversion-result-header">Length (Meter/Feet)</h3>
+          <p class="coversion-result length-res">
+            <!-- 0 meters = 0 feet | 0 feet = 0 meters -->
+          </p>
+        </div>
+      </div>
+
+      <div class="result-container volume">
+        <div class="conversion-result">
+          <h3 class="coversion-result-header">Volume (Liters/Gallons)</h3>
+          <p class="coversion-result volume-res">
+            <!-- 0 liters = 0 gallons | 0 gallons = 0 liters -->
+          </p>
+        </div>
+      </div>
+
+      <div class="length">
+        <div class="result-container">
+          <h3 class="coversion-result-header">Mass (Kilograms/Pounds)</h3>
+          <p class="coversion-result mass-res">
+            <!-- 0 kilos = 0 pounds | 0 pounds = 0 kilos -->
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
